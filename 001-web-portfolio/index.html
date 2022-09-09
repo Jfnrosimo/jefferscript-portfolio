@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Dev Portfolio</title>
+
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     
+    <!----- CDNfonts links -->
+    <link href="http://fonts.cdnfonts.com/css/ubuntu" rel="stylesheet">
+
+    <script src="./js/script.js"></script>
 </head>
 <body>
+    <div class="bg-banner"></div>
     <header class="navigation">
-        <img src="./assets/j-logo.jpg" alt="letter-j-logo">
+        <img src="./assets/j-logo.jpg" alt="letter-j-logo" class="logo">
         <ul class="nav-menu">
             <li>
-                <a href="" class="nav-link">home</a>
+                <a href="#home" class="nav-link">home</a>
             </li>
             <li>
                 <a href="" class="nav-link">about</a>
@@ -31,6 +39,42 @@
             <span class="bar"></span>
         </div>
     </header>
-    <script src="./js/script.js"></script>
+    <div id="home">
+        <div class="banner-text">
+            <h1>Jefferson Rosimo</h1>
+            <h2>Software Developer</h2>
+        </div>
+        <img src="./assets/my-photo.jpg" alt="jefferson-photo">
+    </div>
+    <main>
+        <div id="about">
+            <h2>About</h2>
+            <div class="about-content">
+                <p>Hi, I am excited to share with you who i am, what i want to accomplish and who i would like to become in the near future. I am graduate of electronics engineering and currently studying software development. I love coding and i am eager to improve more. I enjoy listening to different genre of music, playing video games and exercising. Welcome to my webpage, enjoy!.</p>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
 </body>
 </html>

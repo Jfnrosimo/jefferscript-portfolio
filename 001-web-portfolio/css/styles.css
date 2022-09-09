@@ -1,8 +1,8 @@
 :root {
     --light-color: #f8f8f8;
     --dark-color: #121212;
-    --secondary-color: #0045F6;
-    --tertiary-color: #00CFFF;
+    --secondary-color: #00CFFF;
+    --tertiary-color: ;
 }
 * {
     margin: 0;
@@ -10,18 +10,39 @@
     box-sizing: border-box;
     outline: 1px solid green;
 }
+body {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    font-family: 'Ubuntu';
+}
 header {
-    background-color: rgba(10, 10, 10, 0.7);
-    height: 100px;
+    position: fixed;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 3;
 }
-header img {
-    width: 20%;
-    border-radius:  50%;
+.bg-banner{
+    position: absolute;
+    background-image: url("/assets/bg-banner2.jpg");
+    height: 55%;
+    width:  500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+header img.logo {
+    width: 15%;
+    border-radius: 50%;
     display: block;
     margin-left: 30px;
+    opacity: 0.9;
+    z-index: 3;
+}
+header ul {
+    background-color: rgba(10, 10, 10, 0.9);
 }
 header li {
     list-style: none;
@@ -30,22 +51,24 @@ header li {
 header li a {
     text-decoration: none;
     color: var(--light-color);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 .nav-link {
     transition: 0.7s ease;
 }
 .nav-link:hover {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
 }
 .hamburger {
     cursor: pointer;
+    margin-right: 40px;
+    z-index: 1;
 }
 .bar {
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px 50px 5px auto;
+    margin: 5px auto;
     --webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: var(--light-color);
@@ -62,10 +85,31 @@ header li a {
 .nav-menu {
     position: fixed;
     left: -100%;
-    top: 100px;
+    top: 80px;
     width: 100%;
     transition: 0.3s;
 }
 .nav-menu.active {
     left: 0;
+}
+#home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 420px;
+}
+#home h2 {
+    color: var(--secondary-color);
+}
+#home img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--secondary-color);
+}
+main {
+    margin: 15px 10px;
+}
+#about h2 {
+    text-align: center;
 }
