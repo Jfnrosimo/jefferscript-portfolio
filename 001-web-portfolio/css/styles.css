@@ -17,7 +17,8 @@ body {
 }
 header {
     position: fixed;
-    height: 80px;
+    width: 100%;
+    height: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +35,8 @@ header {
     z-index: -1;
 }
 header img.logo {
-    width: 15%;
+    width: 100px;
+    height:100%;
     border-radius: 50%;
     display: block;
     margin-left: 30px;
@@ -85,7 +87,7 @@ header li a.nav-link {
 .nav-menu {
     position: fixed;
     left: -100%;
-    top: 80px;
+    top: 10%;
     width: 100%;
     transition: 0.3s;
 }
@@ -117,7 +119,9 @@ main h2 {
     text-align: center;
     font-size: 2rem;
 }
-#education {
+#about,
+#skills,
+#contact {
     background-image: linear-gradient(to right, var(--dark-color), var(--tertiary-color));
 }
 #education .education-content {
@@ -135,5 +139,45 @@ main h2 {
 .tech-content img {
     border-radius: 50%;
     width: 50px;
+}
+#about,
+#education,
+#skills,
+#projects{
+    margin: 45px auto;
+}
+#contact form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#contact input,
+#contact textarea {
+    margin-bottom: 15px;
+    background-color: var(--tertiary-color);
+}
+#contact button {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+footer .icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.icons .fa-brands{
+    color: var(--light-color);
+}
+.icons a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+footer p {
+    font-size: 0.8rem;
+    text-align: center;
 }
 
