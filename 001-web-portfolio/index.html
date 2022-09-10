@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Dev Portfolio</title>
 
-    <!-- Bootstrap CSS only -->
+    <!-- Bootstrap CSS and JS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     
     <!----- CDNfonts links -->
     <link href="http://fonts.cdnfonts.com/css/ubuntu" rel="stylesheet">
@@ -20,6 +21,7 @@
 </head>
 <body>
     <div class="bg-banner"></div>
+    <!------------- Header section ------------->
     <header class="navigation">
         <img src="./assets/j-logo.jpg" alt="letter-j-logo" class="logo">
         <ul class="nav-menu">
@@ -45,6 +47,7 @@
             <span class="bar"></span>
         </div>
     </header>
+    <!------------- Home section ------------->
     <div id="home">
         <div class="banner-text">
             <h1>Jefferson Rosimo</h1>
@@ -53,10 +56,12 @@
         <img src="./assets/my-photo.jpg" alt="jefferson-photo">
     </div>
     <main>
+        <!------------- About section ------------->
         <section id="about">
             <h2>About</h2>
             <p>Hi, I am excited to share with you who i am, what i want to accomplish and who i would like to become in the near future. I am graduate of electronics engineering and currently studying software development. I love coding and i am eager to improve more. I enjoy listening to different genre of music, playing video games and exercising. Welcome to my webpage, enjoy!.</p>
         </section>
+        <!------------- Education section ------------->
         <section id="education">
             <h2>Education</h2>
             <div class="education-content">
@@ -77,6 +82,7 @@
                 </div>
             </div>
         </section>
+        <!------------- Skills section ------------->
         <section id="skills">
             <h2>Skills</h2>
             <div class="skills-content">
@@ -134,8 +140,50 @@
                 </div>
             </div>
         </section>
+        <!------------- Projects section ------------->
         <section id="projects">
-            
+            <h2>Projects</h2>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://jfnrosimo.github.io/freecodecamp-tribute-page/" target="_blank">
+                            <img src="./assets/project1-sc.PNG" class="d-block w-100" alt="tribute page screenshot">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Tribute Page</h5>
+                                <p>This is a tribute page for Nikola Tesla</p>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://jfnrosimo.github.io/freecodecamp-survey-form/" target="_blank">
+                            <img src="./assets/project2-sc.PNG" class="d-block w-100" alt="survey form screenshot">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Survey form</h5>
+                                <p>This is a survey form page</p>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://jfnrosimo.github.io/freecodecamp-technical-documentation-page/">
+                            <img src="./assets/project3-sc.PNG" class="d-block w-100" alt="Javascript documentation page">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>JavaScript Documentation</h5>
+                                <p>This is a javaScript documentation page</p>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     </main>
 </body>
