@@ -3,4 +3,24 @@
     .bg-banner{
         height: 70%;
     }
+    header li a.nav-link {
+        font-size: 1.8rem;
+    }
+    .bar {
+        width: 35px;
+    }
+    .banner-text,
+    #home img {
+        margin-top: 100px;
+    }
+    #home h1 {
+        font-size: 3rem;
+    }
+    #home img {
+        width: 200px;
+    }
+    main {
+        margin-top: 150px;
+    }
 }
+/*------------- Large screen -------------*/
