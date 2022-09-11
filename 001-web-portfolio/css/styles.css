@@ -151,6 +151,9 @@ main h2 {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+#contact input {
+    width: 45%;
+}
 #contact input,
 #contact textarea {
     margin-bottom: 15px;
@@ -159,6 +162,11 @@ main h2 {
 #contact button {
     padding: 5px 10px;
     margin-bottom: 15px;
+}
+.message-button {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
 }
 footer {
     margin-top: 40px;
