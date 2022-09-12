@@ -21,7 +21,9 @@
         width: 200px;
     }
     main {
+        width: 80%;
         margin-top: 150px;
+        margin-left: 10%;
     }
 }
 /*------------- Large screen -------------*/
@@ -33,22 +35,22 @@
         font-size: 1.6rem;
     }
     .bar {
-        width: 50px;
-        height: 6px;
+        width: 44px;
+        height: 4px;
         margin: 8px auto;
     }
     .hamburger.active .bar:nth-child(1) {
-        transform: translateY(14px) rotate(45deg);
+        transform: translateY(12px) rotate(45deg);
     }
     .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-14px) rotate(-45deg);
+        transform: translateY(-12px) rotate(-45deg);
     }
     #social {
         position: fixed;
     }
     .banner-text,
     #home img {
-        margin-top: 5px;
+        margin-top: 200px;
     }
     #home h1 {
         font-size: 4rem;
@@ -65,10 +67,6 @@
     main p,
     main li {
         font-size: 1.3rem;
-    }
-    .skills-content {
-        display: flex;
-        justify-content: space-around;
     }
     #contanct button {
         width: 50%;

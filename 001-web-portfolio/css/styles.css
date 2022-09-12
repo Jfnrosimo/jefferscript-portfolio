@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid green; */
+    outline: 1px solid green;
 }
 body {
     color: var(--light-color);
@@ -35,7 +35,7 @@ header {
     z-index: -1;
 }
 header img.logo {
-    width: 100px;
+    width: 95px;
     height:100%;
     border-radius: 50%;
     display: block;
@@ -69,6 +69,8 @@ header li a.nav-link {
     cursor: pointer;
     margin-right: 40px;
     z-index: 1;
+    padding: 3px 8px;
+    background-color: rgb(26, 26, 26, 0.7);
 }
 .bar {
     display: block;
@@ -124,6 +126,10 @@ header li a.nav-link {
 #home h2 {
     color: var(--secondary-color);
 }
+.banner-text {
+    background-color: rgb(26, 26, 26, 0.7);
+    border-radius: 5px;
+}
 #home img {
     width: 150px;
     border-radius: 50%;
@@ -144,6 +150,7 @@ main h2 {
 }
 #about,
 #skills,
+#projects,
 #contact {
     background-image: linear-gradient(to right, var(--dark-color), var(--tertiary-color));
     padding: 20px;
@@ -162,8 +169,16 @@ main h2 {
     border-radius: 50%;
     width: 50px;
 }
+.coreskills-container {
+    padding-top: 20px;
+}
+#projects {
+    padding: 30px;
+}
+#projects button {
+    background-color: var(--tertiary-color);
+}
 #about,
-#education,
 #skills,
 #projects{
     margin: 45px auto;
@@ -185,11 +200,21 @@ main h2 {
 #contact button {
     padding: 5px 10px;
     margin-bottom: 15px;
+    width: 50%;
+    align-self: center;
+}
+#contact input,
+#contact textarea,
+#contact button {
+    font-family: 'Lora', sans-serif;
 }
 .message-button {
     display: flex;
     flex-direction: column;
     width: 95%;
+}
+.fa-paper-plane {
+    padding-right: 10px;
 }
 footer {
     margin-top: 40px;
