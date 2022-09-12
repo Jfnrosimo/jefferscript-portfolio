@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
 }
 body {
     color: var(--light-color);
@@ -28,7 +28,7 @@ header {
     position: absolute;
     background-image: url("/assets/bg-banner2.jpg");
     height: 55%;
-    width:  100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,6 +43,9 @@ header img.logo {
     opacity: 0.9;
     z-index: 3;
 }
+.navup {
+    transform: translateY(-100px);
+}
 header ul {
     background-color: rgba(10, 10, 10, 0.9);
 }
@@ -54,6 +57,7 @@ header li a.nav-link {
     text-decoration: none;
     color: var(--light-color);
     font-size: 2.5rem;
+    padding: 5px auto;
 }
 .nav-link {
     transition: 0.7s ease;
@@ -94,6 +98,19 @@ header li a.nav-link {
 .nav-menu.active {
     left: 0;
 }
+.social {
+    display: none;
+}
+.fa-square-gitlab:hover,
+.fa-github:hover,
+.fa-instagram:hover {
+    color: #8109EF;
+}
+.fa-twitter:hover,
+.fa-facebook:hover,
+.fa-linkedin:hover {
+    color: #1A8CD8;
+}
 #home {
     display: flex;
     justify-content: space-around;
@@ -112,6 +129,12 @@ header li a.nav-link {
     border-radius: 50%;
     border: 3px solid var(--secondary-color);
 }
+main p,
+main li,
+footer p,
+footer li {
+    font-family: 'Lora', sans-serif;
+}
 main {
     margin: 15px 10px;
 }
@@ -123,11 +146,10 @@ main h2 {
 #skills,
 #contact {
     background-image: linear-gradient(to right, var(--dark-color), var(--tertiary-color));
+    padding: 20px;
 }
-#education .education-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+#about {
+    padding: 20px;
 }
 .tech-content {
     display: flex;
@@ -153,6 +175,7 @@ main h2 {
 }
 #contact input {
     width: 45%;
+    color: var(--light-color);
 }
 #contact input,
 #contact textarea {
@@ -177,12 +200,22 @@ footer .icons{
     justify-content: center;
     margin-bottom: 15px;
 }
-.icons .fa-brands{
+.fa-brands{
     color: var(--light-color);
 }
 .icons a {
     margin-left: 5px;
     margin-right: 5px;
+}
+.nav-footer {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.nav-footer li {
+    padding-left: 6px;
+    padding-right: 6px;
 }
 footer p {
     font-size: 0.8rem;
