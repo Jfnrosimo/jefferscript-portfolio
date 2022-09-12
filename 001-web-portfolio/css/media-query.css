@@ -55,7 +55,20 @@
         transform: translateY(-12px) rotate(-45deg);
     }
     .social {
+        height: 100%;
+        right: 0;
         position: fixed;
+        display: flex;
+        align-items: center;
+    }
+    .social ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social li {
+        list-style: none;
+        padding: 5px 4px;
     }
     .banner-text,
     #home img {
@@ -85,6 +98,6 @@
     padding: 10px;
     }
     #contact button {
-        width: 10%;
+        width: 25%;
     }
 }
