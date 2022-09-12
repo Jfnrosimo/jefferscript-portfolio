@@ -18,12 +18,15 @@
         font-size: 3rem;
     }
     #home img {
-        width: 200px;
+        width: 180px;
     }
     main {
         width: 80%;
         margin-top: 150px;
         margin-left: 10%;
+    }
+    .nav-footer li {
+        font-size: 1.2rem;
     }
 }
 /*------------- Large screen -------------*/
