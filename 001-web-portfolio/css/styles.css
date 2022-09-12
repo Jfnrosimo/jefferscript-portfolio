@@ -143,6 +143,7 @@ header li a.nav-link {
 .know-more{
     text-decoration: none;
     color: var(--light-color);
+    opacity: 0.7;
 }
 #home img {
     width: 30%;
@@ -178,6 +179,10 @@ main h2 {
 }
 .tech-content li {
     list-style: none;
+}
+.tech-content li,
+.coreskills-content li {
+    padding: 5px;
 }
 .tech-content img {
     border-radius: 50%;
