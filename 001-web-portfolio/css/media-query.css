@@ -56,7 +56,7 @@
     }
     .social {
         height: 100%;
-        right: 0;
+        right: 5px;
         position: fixed;
         display: flex;
         align-items: center;
