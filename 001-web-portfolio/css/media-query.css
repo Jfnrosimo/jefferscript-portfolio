@@ -29,9 +29,12 @@
     #home img {
         width: 180px;
     }
+    .know-more {
+        margin-top: 180px;  
+    }
     main {
         width: 80%;
-        margin-top: 190px;
+        margin-top: 300px;
         margin-left: 10%;
     }
     .nav-footer li {
@@ -80,11 +83,18 @@
     #home img {
         margin-top: 150px;
     }
+    .banner-text {
+        width: 40%;
+        padding: 10px;
+    }
     #home h1 {
         font-size: 2.9rem;
     }
     #home img {
         width: 250px;
+    }
+    .know-more {
+        width: 10%;
     }
     main {
         margin-top: 290px;

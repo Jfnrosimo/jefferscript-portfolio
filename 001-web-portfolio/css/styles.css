@@ -152,7 +152,7 @@ header li a.nav-link {
     text-decoration: none;
     color: var(--light-color);
     padding: 8px;
-    width: 35%;
+    width: 20%;
     margin: 90px auto 15px;
 }
 #home img {
@@ -167,7 +167,7 @@ footer li {
     font-family: 'Lora', sans-serif;
 }
 main {
-    margin: 100px 10px 15px 10px;
+    margin: 130px 10px 15px 10px;
 }
 main h2 {
     text-align: center;
