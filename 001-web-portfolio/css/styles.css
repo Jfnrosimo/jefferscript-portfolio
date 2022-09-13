@@ -27,7 +27,7 @@ header {
 }
 .bg-banner{
     position: absolute;
-    background-image: url("/assets/bg-banner2.jpg");
+    background-image: url("/assets/images/bg-banner2.jpg");
     height: 70%;
     width: 100%;
     background-position: center;
