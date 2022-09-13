@@ -3,6 +3,9 @@
     .bg-banner{
         height: 85%;
     }
+    .logo a {
+        font-size: 4rem;
+    }
     header li a.nav-link {
         font-size: 1.8rem;
     }
@@ -12,7 +15,7 @@
     }
     .banner-text,
     #home img {
-        margin: 100px 2% 40px 1%;
+        margin: 140px 2% 40px 1%;
     }
     .banner-text {
         width: 60%;
@@ -39,6 +42,9 @@
 @media only screen and (min-width: 992px) {
     .bg-banner{
         height: 100%;
+    }
+    .logo a {
+        font-size: 5rem;
     }
     header li a.nav-link {
         font-size: 1.6rem;

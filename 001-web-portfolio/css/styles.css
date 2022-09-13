@@ -4,6 +4,7 @@
     --secondary-color: #00CFFF;
     --tertiary-color: #1A1A1A;
     --visibility-color: rgb(26, 26, 26, 0.7);
+    --darker-visibility-color: rgba(10, 10, 10, 0.9);
 }
 * {
     margin: 0;
@@ -35,7 +36,7 @@ header {
     z-index: -1;
 }
 header .logo {
-    font-family: 'Rosmatika', sans-serif;
+    font-family: 'Qui Finn', sans-serif;
     display: block;
     margin-left: 30px;
     padding: 0 15px;
@@ -43,7 +44,6 @@ header .logo {
     border-radius: 8px;
     z-index: 3;
     align-items: center;
-    background-color: var(--visibility-color);
 }
 .logo a {
     text-decoration: none;
@@ -54,7 +54,7 @@ header .logo {
     transform: translateY(-100px);
 }
 header ul {
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: var(--darker-visibility-color);
 }
 header .nav-menu li {
     list-style: none;
@@ -150,7 +150,6 @@ header li a.nav-link {
 .know-more{
     text-decoration: none;
     color: var(--light-color);
-    opacity: 0.7;
 }
 #home img {
     width: 30%;
