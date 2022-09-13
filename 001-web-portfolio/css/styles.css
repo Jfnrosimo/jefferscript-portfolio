@@ -3,6 +3,7 @@
     --dark-color: #121212;
     --secondary-color: #00CFFF;
     --tertiary-color: #1A1A1A;
+    --visibility-color: rgb(26, 26, 26, 0.7);
 }
 * {
     margin: 0;
@@ -33,14 +34,21 @@ header {
     background-size: cover;
     z-index: -1;
 }
-header img.logo {
-    width: 65px;
-    height:100%;
-    border-radius: 50%;
+header .logo {
+    font-family: 'Rosmatika', sans-serif;
     display: block;
     margin-left: 30px;
+    padding: 0 15px;
     opacity: 0.9;
+    border-radius: 8px;
     z-index: 3;
+    align-items: center;
+    background-color: var(--visibility-color);
+}
+.logo a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--light-color);
 }
 .navup {
     transform: translateY(-100px);
@@ -69,7 +77,7 @@ header li a.nav-link {
     margin-right: 40px;
     z-index: 1;
     padding: 3px 8px;
-    background-color: rgb(26, 26, 26, 0.7);
+    background-color: var(--visibility-color);
 }
 .bar {
     display: block;
@@ -130,14 +138,14 @@ header li a.nav-link {
     display: block;
 }
 .banner-text {
-    background-color: rgb(26, 26, 26, 0.7);
+    background-color: var(--visibility-color);
     border-radius: 5px;
 }
 .banner-text,
 #home img,
 .know-more {
     margin-top: 120px;
-    background-color: rgb(26, 26, 26, 0.7);
+    background-color: var(--visibility-color);
 }
 .know-more{
     text-decoration: none;
