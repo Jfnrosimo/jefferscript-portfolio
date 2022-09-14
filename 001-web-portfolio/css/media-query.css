@@ -113,6 +113,17 @@
     .coreskills-content li {
     padding: 10px;
     }
+    .contact-details {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .phone,
+    .email,
+    .location {
+        padding-left: 10px;
+        border-left: 4px solid var(--secondary-color);
+    }
     #contact button {
         width: 25%;
     }

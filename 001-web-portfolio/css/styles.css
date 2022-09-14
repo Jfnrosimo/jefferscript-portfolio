@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid green;
 }
 body {
     color: var(--light-color);
@@ -222,7 +221,7 @@ main h2 {
 }
 .contact-details {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
 }
 .phone,
 .email,
