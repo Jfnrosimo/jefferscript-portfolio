@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid green;
 }
 body {
     color: var(--light-color);
@@ -215,6 +216,21 @@ main h2 {
 #skills,
 #projects{
     margin: 45px auto;
+}
+#contact h2 {
+    margin-bottom: 20px;
+}
+.contact-details {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.phone,
+.email,
+.location {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4rem;
 }
 #contact form {
     display: flex;
