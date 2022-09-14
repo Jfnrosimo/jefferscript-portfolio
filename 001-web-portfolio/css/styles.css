@@ -203,8 +203,12 @@ main h2 {
 #projects {
     padding: 30px;
 }
+#projects .carousel-caption {
+    background-color: var(--visibility-color);
+}
 #projects button {
     background-color: var(--tertiary-color);
+    width: 10%;
 }
 #about,
 #skills,
@@ -276,4 +280,3 @@ footer p {
     font-size: 0.8rem;
     text-align: center;
 }
-
