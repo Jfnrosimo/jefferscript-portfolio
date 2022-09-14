@@ -236,6 +236,10 @@ main h2 {
     width: 50%;
     align-self: center;
 }
+#contact textarea {
+    height: 300px;
+    color: var(--light-color);
+}
 #contact input,
 #contact textarea,
 #contact button {

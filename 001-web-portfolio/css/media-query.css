@@ -116,4 +116,8 @@
     #contact button {
         width: 25%;
     }
+    #contact form {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
