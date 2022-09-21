@@ -167,7 +167,6 @@ header li a.nav-link {
 #home img {
     width: 30%;
     border-radius: 50%;
-    border: 3px solid var(--secondary-color);
 }
 
 /*------------------------------- wrapper of all sections ----------------------*/
