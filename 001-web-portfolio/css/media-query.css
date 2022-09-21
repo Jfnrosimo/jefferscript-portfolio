@@ -1,5 +1,9 @@
 /*----------- Medium screen -----------*/
 @media only screen and (min-width: 576px) {
+    /*
+        Each change in this media query is to add sizes of fonts, 
+        images, and minor changes in margins etc..
+    */
     .bg-banner{
         height: 85%;
     }
@@ -43,6 +47,10 @@
 }
 /*------------- Large screen -------------*/
 @media only screen and (min-width: 992px) {
+    /*
+        Each change in this media query is to add sizes of fonts, 
+        images, and minor changes in margins etc..
+    */
     .bg-banner{
         height: 100%;
     }

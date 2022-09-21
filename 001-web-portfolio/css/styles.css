@@ -1,3 +1,4 @@
+/*-----------------------using root variable for colors----------------------*/
 :root {
     --light-color: #f8f8f8;
     --dark-color: #121212;
@@ -16,6 +17,8 @@ body {
     background-color: var(--dark-color);
     font-family: 'Ubuntu';
 }
+/*------------------------This is a mobile first approach----------------------*/
+/*--------------------------header and navigation----------------------------*/
 header {
     position: fixed;
     width: 100%;
@@ -72,6 +75,8 @@ header li a.nav-link {
 .nav-link:hover {
     color: var(--secondary-color);
 }
+
+/*--------------------------------hamburger menu styling------------------------------*/
 .hamburger {
     cursor: pointer;
     margin-right: 40px;
@@ -79,6 +84,7 @@ header li a.nav-link {
     padding: 3px 8px;
     background-color: var(--visibility-color);
 }
+/*-----------------------------hamburger vertical bar------------------------------ */
 .bar {
     display: block;
     width: 25px;
@@ -97,6 +103,7 @@ header li a.nav-link {
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
+
 .nav-menu {
     position: fixed;
     left: -100%;
@@ -107,6 +114,8 @@ header li a.nav-link {
 .nav-menu.active {
     left: 0;
 }
+
+/*-------------- hide the social icons to be shown in desktop view only ---------------*/
 .social {
     display: none;
 }
@@ -120,6 +129,7 @@ header li a.nav-link {
 .fa-linkedin:hover {
     color: #1A8CD8;
 }
+/*-------------------------- Hero section with button ------------------------*/
 #home {
     display: flex;
     justify-content: space-around;
@@ -159,19 +169,23 @@ header li a.nav-link {
     border-radius: 50%;
     border: 3px solid var(--secondary-color);
 }
+
+/*------------------------------- wrapper of all sections ----------------------*/
+main {
+    margin: 130px 10px 15px 10px;
+}
 main p,
 main li,
 footer p,
 footer li {
     font-family: 'Lora', sans-serif;
 }
-main {
-    margin: 130px 10px 15px 10px;
-}
 main h2 {
     text-align: center;
     font-size: 2rem;
 }
+
+/*------------------------- uniform styles for each section ----------------------------*/
 #about,
 #skills,
 #projects,
@@ -179,9 +193,18 @@ main h2 {
     background-image: linear-gradient(to right, var(--dark-color), var(--tertiary-color));
     padding: 20px;
 }
+#about,
+#skills,
+#projects{
+    margin: 45px auto;
+}
+
+/*-----------------------start of about section styling------------------------*/
 #about {
     padding: 20px;
 }
+
+/*--------------------------------- skills section styling ---------------------*/
 .tech-content {
     display: flex;
     justify-content: space-around;
@@ -200,6 +223,8 @@ main h2 {
 .coreskills-container {
     padding-top: 20px;
 }
+
+/*----------------------------- projects section styling -------------------------------*/
 #projects {
     padding: 30px;
 }
@@ -211,11 +236,8 @@ main h2 {
     background-color: var(--tertiary-color);
     width: 10%;
 }
-#about,
-#skills,
-#projects{
-    margin: 45px auto;
-}
+
+/*---------------------------- contact section styling ------------------------------------*/
 #contact h2 {
     margin-bottom: 20px;
 }
@@ -268,6 +290,8 @@ main h2 {
 .fa-paper-plane {
     padding-right: 10px;
 }
+
+/*---------------------------start of footer styling-----------------------------*/
 footer {
     margin-top: 40px;
     margin-bottom: 40px;
