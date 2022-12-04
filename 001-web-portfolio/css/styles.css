@@ -172,7 +172,7 @@ header li a.nav-link {
     margin: 90px auto 15px;
 }
 .know-more:hover{
-    background-color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 #home img {
     width: 30%;
@@ -217,6 +217,11 @@ main h2 {
 .tech-content {
     display: flex;
     justify-content: space-around;
+}
+.intermediate ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 .tech-content li {
     list-style: none;
