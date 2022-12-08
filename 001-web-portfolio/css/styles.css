@@ -266,6 +266,10 @@ main h2 {
     text-align: center;
     font-size: 1.4rem;
 }
+.send-email-desc{
+    text-align: center;
+    font-size: 1.6rem;
+}
 #contact form {
     display: flex;
     justify-content: space-around;
