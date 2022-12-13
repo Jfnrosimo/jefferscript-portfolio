@@ -249,6 +249,9 @@ main h2 {
     background-color: var(--tertiary-color);
     width: 10%;
 }
+#projects .carousel-img{
+    height: 70vh;
+}
 
 /*---------------------------- contact section styling ------------------------------------*/
 #contact h2 {
